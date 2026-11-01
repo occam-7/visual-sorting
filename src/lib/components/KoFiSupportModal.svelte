@@ -44,16 +44,14 @@
 >
   <div class="modal-box">
     <h3 class="text-lg font-bold">
-      ☕ Glad You're Here!
+      ☕ 谢谢你来！
     </h3>
     <p class="py-4">
-      Hey! I'm Mateusz, and I'm passionate about creating interactive projects
-      that combine education with visual joy. If Visual Sorting brings you happiness
-      and you'd like to see more projects like this, consider supporting me on Ko-Fi.
+      你好，我是 Mateusz。我喜欢做那种既能学到东西、看着又赏心悦目的交互项目。
+      如果「排序可视化」让你感到愉快，也希望看到更多类似的作品，欢迎在 Ko-Fi 上支持我。
     </p>
     <p class="text-sm opacity-70 pb-2">
-      Your support allows me to dedicate more time to creating and sharing
-      tools like this with the community. Every coffee really makes a difference! 🚀
+      你的支持让我能投入更多时间做这类工具、分享给社区。每一杯咖啡都实实在在有用！🚀
     </p>
     <div class="modal-action">
       <a
@@ -63,10 +61,10 @@
         class="btn btn-primary"
         on:click={handleClick}
       >
-        ☕ Buy Me a Coffee
+        ☕ 请我喝杯咖啡
       </a>
       <form method="dialog">
-        <button class="btn" on:click={handleDismiss}>Maybe Later</button>
+        <button class="btn" on:click={handleDismiss}>以后再说</button>
       </form>
     </div>
   </div>

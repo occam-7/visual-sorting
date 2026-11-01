@@ -6,13 +6,24 @@
 
   export let oscillatorType: OscillatorType;
 
+  const oscillatorNames: Record<string, string> = {
+    sine: '正弦波',
+    square: '方波',
+    sawtooth: '锯齿波',
+    triangle: '三角波',
+  };
+
   const getOscillatorName = (osc: OscillatorType) => {
     if (!osc) {
-      return 'None';
+      return '静音';
     }
-    return (osc.charAt(0).toUpperCase() + osc.slice(1)).replace(
-      /([0-9])/g,
-      ' $1'
+    const custom = /^custom(\d+)$/.exec(osc);
+    if (custom) {
+      return `自定义 ${custom[1]}`;
+    }
+    return (
+      oscillatorNames[osc] ??
+      (osc.charAt(0).toUpperCase() + osc.slice(1)).replace(/([0-9])/g, ' $1')
     );
   };
 
@@ -28,9 +39,9 @@
   <summary
     class="md:btn md:btn-square md:btn-ghost"
     title={oscillatorType
-      ? `Sound: ${getOscillatorName(oscillatorType)}`
-      : 'Sound: muted'}
-    aria-label="Select sound"
+      ? `声音：${getOscillatorName(oscillatorType)}`
+      : '声音：静音'}
+    aria-label="选择声音"
     on:click|stopPropagation={handleMenuOutsideClick(ref, 'soundSelect')}
   >
     {#if oscillatorType}
@@ -75,7 +86,7 @@
       </svg>
     {/if}
     <span class="md:hidden">
-      {oscillatorType ? getOscillatorName(oscillatorType) : 'None'}
+      {oscillatorType ? getOscillatorName(oscillatorType) : '静音'}
     </span>
   </summary>
   <ul
@@ -85,7 +96,7 @@
       <button
         class={!oscillatorType ? 'btn-active' : ''}
         data-sound-select
-        on:click={() => changeSound(null)}>None</button
+        on:click={() => changeSound(null)}>静音</button
       >
     </li>
     {#each customOscillatorTypes as osc}

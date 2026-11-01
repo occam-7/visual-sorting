@@ -15,8 +15,8 @@
 
 <label class="form-control w-full mb-2">
   <div class="label">
-    <span class="label-text">Array size</span>
-    <span class="label-text-alt">{size} bars</span>
+    <span class="label-text">数组大小</span>
+    <span class="label-text-alt">{size} 根柱子</span>
   </div>
   <div class="join">
     {#each steps as value}

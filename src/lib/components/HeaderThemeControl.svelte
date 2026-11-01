@@ -22,8 +22,8 @@
 <details bind:this={ref} class="md:relative md:inline-block">
   <summary
     class="md:btn md:btn-square md:btn-ghost"
-    title="Theme: {selectedTheme}"
-    aria-label="Select theme"
+    title="主题：{selectedTheme}"
+    aria-label="选择主题"
     on:click|stopPropagation={handleMenuOutsideClick(ref, 'setTheme')}
   >
     <svg

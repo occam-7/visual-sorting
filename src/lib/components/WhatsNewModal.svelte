@@ -30,58 +30,56 @@
   on:close={() => localStorage.setItem(VERSION_KEY, '1')}
 >
   <div class="modal-box max-w-lg">
-    <h3 class="text-lg font-bold mb-1">✨ What's new</h3>
+    <h3 class="text-lg font-bold mb-1">✨ 新功能</h3>
     <p class="text-sm opacity-70 mb-4">
-      A bunch of fresh features landed. Here's the highlights:
+      一批新功能上线了，重点如下：
     </p>
     <ul class="space-y-3">
       <li>
-        <div class="font-semibold">Compare two algorithms</div>
+        <div class="font-semibold">对比两种算法</div>
         <div class="text-sm opacity-70">
-          Toggle the compare icon in the header to race two algorithms on the
-          same array, side-by-side or stacked.
+          点开顶栏的对比按钮，让两种算法在同一份数组上比赛，可左右并排或上下堆叠。
         </div>
       </li>
       <li>
-        <div class="font-semibold">Live metrics</div>
+        <div class="font-semibold">实时指标</div>
         <div class="text-sm opacity-70">
-          Comparisons, swaps and array accesses ticking in the header — see why
-          non-comparison sorts skip <kbd class="kbd kbd-xs">Cmp</kbd> entirely.
+          顶栏实时显示比较、交换与数组访问次数——还能看出非比较类排序的
+          <kbd class="kbd kbd-xs">比较</kbd> 一直是 0。
         </div>
       </li>
       <li>
-        <div class="font-semibold">Keyboard shortcuts</div>
+        <div class="font-semibold">键盘快捷键</div>
         <div class="text-sm opacity-70">
-          <kbd class="kbd kbd-xs">Space</kbd> start/stop,
-          <kbd class="kbd kbd-xs">→</kbd> step,
-          <kbd class="kbd kbd-xs">R</kbd> shuffle, plus speed and algorithm
-          cycling. Press <kbd class="kbd kbd-xs">?</kbd> for the full list.
+          <kbd class="kbd kbd-xs">空格</kbd> 开始/停止，
+          <kbd class="kbd kbd-xs">→</kbd> 单步，
+          <kbd class="kbd kbd-xs">R</kbd> 打乱，还能调速度、切换算法。
+          按 <kbd class="kbd kbd-xs">?</kbd> 查看完整列表。
         </div>
       </li>
       <li>
-        <div class="font-semibold">New array patterns</div>
+        <div class="font-semibold">新的数组模式</div>
         <div class="text-sm opacity-70">
-          <strong>Wave</strong>, <strong>Nearly Sorted</strong> and
-          <strong>Pipe Organ</strong> joined the pattern picker next to the
-          shuffle button.
+          <strong>波浪</strong>、<strong>接近有序</strong>和
+          <strong>管风琴</strong>三种新模式，加到了「打乱」旁边的模式选择里。
         </div>
       </li>
       <li>
-        <div class="font-semibold">Your preferences stick</div>
+        <div class="font-semibold">偏好会被记住</div>
         <div class="text-sm opacity-70">
-          Size, delay, sound and selected pattern persist between visits.
+          数组大小、延迟、声音与所选模式，下次打开还在。
         </div>
       </li>
     </ul>
     <div class="modal-action">
       <form method="dialog">
         <button class="btn btn-primary" on:click={() => dismiss('gotIt')}
-          >Got it</button
+          >知道了</button
         >
       </form>
     </div>
   </div>
   <form method="dialog" class="modal-backdrop">
-    <button on:click={() => dismiss('backdrop')}>close</button>
+    <button on:click={() => dismiss('backdrop')}>关闭</button>
   </form>
 </dialog>

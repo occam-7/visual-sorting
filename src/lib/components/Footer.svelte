@@ -9,15 +9,15 @@
 <footer class="footer items-center p-4 bg-base-200">
   <aside class="items-center grid-flow-col">
     <p class="text-xs lg:text-sm">
-      Built with ☕️ and ❤️ by <a
+      由 <a
         class="link"
         href="https://github.com/mszula"
         target="_blank"
         on:click={handleGitHubClick}>mszula</a
       >
-      using Svelte.
+      用 ☕️ 与 ❤️ 打造（Svelte）。中文版 · <a class="link" href="https://mszula.github.io/visual-sorting/" target="_blank" rel="noopener">英文原版</a>
       <span class="text-xs opacity-30"
-        >Version: {import.meta.env.VITE_GIT_COMMIT_REF}</span
+        >版本：{import.meta.env.VITE_GIT_COMMIT_REF}</span
       >
     </p>
   </aside>

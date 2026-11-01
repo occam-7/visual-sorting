@@ -12,13 +12,13 @@
   type SelectedPattern = Exclude<Pattern, 'shuffle'>;
 
   const patternLabels: Record<Pattern, string> = {
-    shuffle: 'Shuffle',
-    reverse: 'Reverse',
-    valley: 'Valley',
-    mountain: 'Mountain',
-    'nearly-sorted': 'Nearly Sorted',
-    sine: 'Wave',
-    'pipe-organ': 'Pipe Organ',
+    shuffle: '打乱',
+    reverse: '逆序',
+    valley: '山谷',
+    mountain: '山峰',
+    'nearly-sorted': '接近有序',
+    sine: '波浪',
+    'pipe-organ': '管风琴',
   };
 
   const dropdownPatterns: SelectedPattern[] = [
@@ -72,17 +72,17 @@
       class="btn join-item {$running
         ? 'btn-secondary'
         : 'btn-primary'} lg:btn-lg lg:w-24"
-      title={$running ? 'Stop (Space)' : 'Start (Space)'}
-      on:click={start}>{$running ? 'Stop' : 'Start'}</button
+      title={$running ? '停止（空格）' : '开始（空格）'}
+      on:click={start}>{$running ? '停止' : '开始'}</button
     >
     <button
       class="btn join-item lg:btn-lg lg:w-24"
-      title="Step (→)"
-      on:click={step}>Step</button
+      title="单步（→）"
+      on:click={step}>单步</button
     >
   </div>
-  <button class="btn lg:btn-lg" title="Shuffle (R)" on:click={shuffleClick}
-    >Shuffle</button
+  <button class="btn lg:btn-lg" title="打乱（R）" on:click={shuffleClick}
+    >打乱</button
   >
 </div>
 <div class="flex gap-1">
@@ -113,7 +113,7 @@
             <span class="flex items-center gap-2">
               {patternLabels[p]}
               {#if newPatterns.has(p)}
-                <span class="badge badge-primary badge-sm">new</span>
+                <span class="badge badge-primary badge-sm">新</span>
               {/if}
             </span>
           </button>

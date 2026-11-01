@@ -12,8 +12,8 @@
 
 <button
   class="md:btn md:btn-square md:btn-ghost {compareMode ? 'md:btn-active' : ''}"
-  aria-label={compareMode ? 'Disable compare mode' : 'Enable compare mode'}
-  title={compareMode ? 'Disable compare mode' : 'Compare two algorithms'}
+  aria-label={compareMode ? '关闭对比模式' : '开启对比模式'}
+  title={compareMode ? '关闭对比模式' : '对比两种算法'}
   on:click={handleCompare}
 >
   <svg
@@ -31,5 +31,5 @@
     <rect width="8" height="16" x="3" y="4" rx="1" />
     <rect width="8" height="16" x="13" y="4" rx="1" />
   </svg>
-  <span class="md:hidden inline">Compare</span>
+  <span class="md:hidden inline">对比</span>
 </button>

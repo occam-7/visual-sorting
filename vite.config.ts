@@ -15,8 +15,11 @@ export default defineConfig({
     sveltekit(),
     SvelteKitPWA({
       manifest: {
-        name: 'Visual Sorting',
-        short_name: 'VS',
+        name: '排序可视化 · 看得见也听得见的排序算法',
+        short_name: '排序可视化',
+        description:
+          '把各种排序算法的执行过程画成柱状图，并配上声音，边看边听。',
+        lang: 'zh-CN',
         icons: [
           {
             src: '/visual-sorting/android-chrome-192x192.png',

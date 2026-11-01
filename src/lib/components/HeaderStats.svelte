@@ -22,28 +22,28 @@
       <div class="flex items-center gap-2 lg:gap-3">
         <div
           class="tooltip tooltip-bottom flex flex-col items-end leading-tight"
-          data-tip="Comparisons — element-to-element comparisons performed"
+          data-tip="比较 —— 元素之间发生的比较次数"
         >
           <span class="opacity-50 text-[0.55rem] uppercase tracking-wider"
-            >Cmp</span
+            >比较</span
           >
           <span class="tabular-nums">{fmt(p.stats.comparisons)}</span>
         </div>
         <div
           class="tooltip tooltip-bottom flex flex-col items-end leading-tight"
-          data-tip="Swaps — full element exchanges performed"
+          data-tip="交换 —— 完整发生的元素交换次数"
         >
           <span class="opacity-50 text-[0.55rem] uppercase tracking-wider"
-            >Swp</span
+            >交换</span
           >
           <span class="tabular-nums">{fmt(p.stats.swaps)}</span>
         </div>
         <div
           class="tooltip tooltip-bottom flex flex-col items-end leading-tight"
-          data-tip="Array accesses — total reads and writes on the array"
+          data-tip="访问 —— 对数组的读写总次数"
         >
           <span class="opacity-50 text-[0.55rem] uppercase tracking-wider"
-            >Acc</span
+            >访问</span
           >
           <span class="tabular-nums">{fmt(p.stats.accesses)}</span>
         </div>

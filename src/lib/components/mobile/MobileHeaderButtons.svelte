@@ -32,7 +32,7 @@
 <div class="flex-none md:hidden">
   <button
     class="btn btn-square btn-ghost"
-    aria-label="Open menu"
+    aria-label="打开菜单"
     on:click={toggleMenu}
   >
     <svg

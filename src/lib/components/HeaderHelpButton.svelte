@@ -11,8 +11,8 @@
 
 <button
   class="md:btn md:btn-square md:btn-ghost"
-  aria-label="Keyboard shortcuts"
-  title="Keyboard shortcuts (?)"
+  aria-label="键盘快捷键"
+  title="键盘快捷键（?）"
   on:click={handleClick}
 >
   <svg
@@ -38,5 +38,5 @@
     <path d="M18 12h.01" />
     <path d="M7 16h10" />
   </svg>
-  <span class="md:hidden inline">Keyboard shortcuts</span>
+  <span class="md:hidden inline">键盘快捷键</span>
 </button>

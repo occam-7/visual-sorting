@@ -1,5 +1,9 @@
 # 🔮 🔈 Visual Sorting aka The Sound Of Sorting
 
+> **中文版**：界面已汉化，在线地址 <https://occam-7.github.io/visual-sorting/>。
+> 源码来自上游 [mszula/visual-sorting](https://github.com/mszula/visual-sorting)，英文原版见 <https://mszula.github.io/visual-sorting/>。
+> 汉化范围：界面文案、悬浮提示、帮助与弹窗；算法名称做了中文对照命名，键位标识、数据与逻辑未动。
+
 Visual Sorting is a tool that provides a visualization of sorting algorithms, accompanied by an auditory experience. It allows users to witness how various sorting algorithms work through dynamic horizontal bars.
 
 https://github.com/user-attachments/assets/2b9674c5-c705-4a22-ba6a-474cfc11cddd

@@ -31,7 +31,7 @@
 
 <label class="form-control w-full">
   <div class="label">
-    <span class="label-text">Delay</span>
+    <span class="label-text">延迟</span>
     <span class="label-text-alt">{realDelay} ms</span>
   </div>
   <input

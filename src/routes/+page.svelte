@@ -386,8 +386,8 @@
           />
           <button
             class="btn btn-sm btn-ghost absolute top-2 right-2 z-10 gap-1.5"
-            aria-label="Toggle compare layout"
-            title="Switch layout (side-by-side / stacked)"
+            aria-label="切换对比布局"
+            title="切换布局（左右并排 / 上下堆叠）"
             on:click={toggleCompareLayout}
           >
             {#if compareLayout === 'row'}

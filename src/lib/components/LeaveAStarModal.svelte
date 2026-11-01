@@ -42,12 +42,11 @@
 >
   <div class="modal-box">
     <h3 class="text-lg font-bold">
-      ⭐️ Support This Project by Leaving a Star!
+      ⭐️ 点个 Star，支持这个项目！
     </h3>
     <p class="py-4">
-      If you find this project helpful or inspiring, consider showing your
-      support by leaving a star on GitHub. Your feedback motivates us to keep
-      improving!
+      如果这个项目对你有帮助或让你觉得有意思，不妨去 GitHub 点一个 Star。
+      你的反馈是我们继续改进的动力！
     </p>
     <div class="modal-action">
       <a
@@ -57,10 +56,10 @@
         class="btn btn-primary"
         on:click={click}
       >
-        ⭐️ Star on GitHub
+        ⭐️ 去 GitHub 点 Star
       </a>
       <form method="dialog">
-        <button class="btn" on:click={dismiss}>Maybe Later</button>
+        <button class="btn" on:click={dismiss}>以后再说</button>
       </form>
     </div>
   </div>

@@ -23,8 +23,8 @@
   <div class="flex-1 min-w-0">
     <a class="btn btn-ghost px-2 md:px-4" href="{base}/">
       <span class="text-lg md:text-xl truncate">
-        Visual Sorting
-        <span class="hidden sm:inline text-sm">aka The Sound Of Sorting</span>
+        排序可视化
+        <span class="hidden sm:inline text-sm">又名「排序之声」</span>
       </span>
     </a>
   </div>
@@ -33,27 +33,27 @@
 
   <div class="hidden md:flex flex-none items-center gap-1">
     <span class="w-px h-6 bg-base-content/10 mx-1" aria-hidden="true" />
-    <div class="tooltip tooltip-bottom" data-tip="Sound">
+    <div class="tooltip tooltip-bottom" data-tip="声音">
       <HeaderSoundControl bind:oscillatorType />
     </div>
-    <div class="tooltip tooltip-bottom" data-tip="Theme">
+    <div class="tooltip tooltip-bottom" data-tip="主题">
       <HeaderThemeControl bind:selectedTheme />
     </div>
     <span class="w-px h-6 bg-base-content/10 mx-1" aria-hidden="true" />
     <div
       class="tooltip tooltip-bottom"
-      data-tip={compareMode ? 'Disable compare' : 'Compare two algorithms'}
+      data-tip={compareMode ? '关闭对比' : '对比两种算法'}
     >
       <HeaderCompareButton {compareMode} {toggleCompareMode} />
     </div>
-    <div class="tooltip tooltip-bottom" data-tip="Keyboard shortcuts (?)">
+    <div class="tooltip tooltip-bottom" data-tip="键盘快捷键（?）">
       <HeaderHelpButton onClick={openHelp} />
     </div>
     <span class="w-px h-6 bg-base-content/10 mx-1" aria-hidden="true" />
     <div class="tooltip tooltip-bottom" data-tip="GitHub">
       <HeaderGitHubButton />
     </div>
-    <div class="tooltip tooltip-bottom" data-tip="Buy me a coffee">
+    <div class="tooltip tooltip-bottom" data-tip="请作者喝杯咖啡">
       <HeaderCoffeeButton />
     </div>
   </div>

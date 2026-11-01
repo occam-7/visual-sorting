@@ -26,98 +26,98 @@ import type { AlgorithmDefinition } from './types';
 export const algorithms: AlgorithmDefinition[][] = [
   [
     {
-      name: 'Bubble Sort',
+      name: '冒泡排序',
       function: bubbleSort,
     },
     {
-      name: 'Quick Sort',
+      name: '快速排序',
       function: quickSort,
     },
     {
-      name: 'Shell Sort',
+      name: '希尔排序',
       function: shellSort,
     },
     {
-      name: 'Merge Sort',
+      name: '归并排序',
       function: mergeSort,
     },
     {
-      name: 'Insertion Sort',
+      name: '插入排序',
       function: insertionSort,
     },
     {
-      name: 'Selection Sort',
+      name: '选择排序',
       function: selectionSort,
     },
     {
-      name: 'Radix LSD Sort',
+      name: '基数排序 LSD',
       function: radixSort,
     },
     {
-      name: 'Radix MSD Sort',
+      name: '基数排序 MSD',
       function: radixSortMSD,
     },
     {
-      name: 'Heap Sort',
+      name: '堆排序',
       function: heapSort,
     },
     {
-      name: 'Bitonic Sort',
+      name: '双调排序',
       function: bitonicSort,
       arraySizeComponent: RangeArraySizePowerOfTwo,
     },
     {
-      name: 'Tim Sort',
+      name: 'Tim 排序',
       function: timSort,
     },
     {
-      name: 'Gnome Sort',
+      name: '地精排序',
       function: gnomeSort,
     },
     {
-      name: 'Cycle Sort',
+      name: '循环排序',
       function: cycleSort,
     },
     {
-      name: 'Cocktail Sort',
+      name: '鸡尾酒排序',
       function: cocktailSort,
     },
     {
-      name: 'Pancake Sort',
+      name: '煎饼排序',
       function: pancakeSort,
     },
   ],
   [
     {
-      name: 'Stooge Sort',
+      name: 'Stooge 排序',
       function: stoogeSort,
     },
     {
-      name: 'Bogo Sort',
+      name: 'Bogo 排序',
       function: bogoSort,
     },
     {
-      name: 'Exchange Sort',
+      name: '交换排序',
       function: exchangeSort,
     },
     {
-      name: 'Odd Even Sort',
+      name: '奇偶排序',
       function: oddEvenSort,
     },
     {
-      name: 'Counting Sort',
+      name: '计数排序',
       function: countingSort,
-      badge: 'new',
+      badge: '新',
     },
     {
-      name: 'Comb Sort',
+      name: '梳排序',
       function: combSort,
-      badge: 'new',
+      badge: '新',
     },
     {
-      name: 'Intro Sort',
+      name: '内省排序',
       function: introSort,
-      badge: 'new',
+      badge: '新',
     },
   ],
 ];
