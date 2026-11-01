@@ -5,7 +5,7 @@
   export const close = () => ref?.close();
 
   const shortcuts: { keys: string[]; label: string }[] = [
-    { keys: ['Space'], label: '开始 / 停止' },
+    { keys: ['空格'], label: '开始 / 停止' },
     { keys: ['→'], label: '单步执行' },
     { keys: ['R'], label: '重新打乱' },
     { keys: ['↑', '↓'], label: '加快 / 减慢' },

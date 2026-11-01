@@ -6,25 +6,33 @@
 
   export let oscillatorType: OscillatorType;
 
+  // 波形底层类型值（sine / square2 / organ3 …）保持原样，只翻译展示名。
   const oscillatorNames: Record<string, string> = {
     sine: '正弦波',
     square: '方波',
     sawtooth: '锯齿波',
     triangle: '三角波',
+    chiptune: '芯片音',
+    organ: '管风琴',
+    bass: '低音',
+    brass: '铜管',
+    aah: '人声啊',
+    ooh: '人声呜',
+    eeh: '人声咦',
+    buzz: '蜂鸣',
+    dissonance: '不谐和音',
   };
 
   const getOscillatorName = (osc: OscillatorType) => {
     if (!osc) {
       return '静音';
     }
-    const custom = /^custom(\d+)$/.exec(osc);
-    if (custom) {
-      return `自定义 ${custom[1]}`;
+    const match = /^([a-z]+?)(\d*)$/.exec(osc);
+    if (!match || !oscillatorNames[match[1]]) {
+      return osc.charAt(0).toUpperCase() + osc.slice(1);
     }
-    return (
-      oscillatorNames[osc] ??
-      (osc.charAt(0).toUpperCase() + osc.slice(1)).replace(/([0-9])/g, ' $1')
-    );
+    const base = oscillatorNames[match[1]];
+    return match[2] ? `${base} ${match[2]}` : base;
   };
 
   const changeSound = (type: OscillatorType) => {
